@@ -60,5 +60,5 @@ To understand the complex structure of how situated dialogues evolve, we utilize
 
 ### Additional Experiments
 * As an attempt to preprocess the dataset, we tried to use approaches like UnderSampling and SMOTE on the dataset and then trained the model with the new dataset. However, the results were bad.
-* We fine-tuned the GEMMA 5 model on the tokenized utterance pairs using the Unsloth framework. GEMMA models are well-suited for various text generation tasks due to their architecture, which incorporates both text and multimodal inputs. They have demonstrated effectiveness in tasks like question answering, summarization, and reasoning. Unsloth provides a quantized version of the GEMMA model, making it feasible to fine-tune on limited compute resources such as a single T4 GPU.
+* We fine-tuned the GEMMA-7b-IT model on the tokenized utterance pairs using the Unsloth framework. GEMMA models are well-suited for various text generation tasks due to their architecture, which incorporates both text and multimodal inputs. They have demonstrated effectiveness in tasks like question answering, summarization, and reasoning. Unsloth provides a quantized version of the GEMMA model, making it feasible to fine-tune on limited compute resources such as a single T4 GPU.
   
