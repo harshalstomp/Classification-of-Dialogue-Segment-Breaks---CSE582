@@ -54,9 +54,9 @@ To understand the complex structure of how situated dialogues evolve, we utilize
 
 ### Results
 
-!()
+!(https://github.com/harshalstomp/Classification-of-Dialogue-Segment-Breaks---CSE582/blob/main/images/results.PNG)
 
-!()
+!(https://github.com/harshalstomp/Classification-of-Dialogue-Segment-Breaks---CSE582/blob/main/images/results2.PNG)
 
 ### Additional Experiments
 * As an attempt to preprocess the dataset, we tried to use approaches like UnderSampling and SMOTE on the dataset, and then trained the model with the new dataset. However, the results were bad.
