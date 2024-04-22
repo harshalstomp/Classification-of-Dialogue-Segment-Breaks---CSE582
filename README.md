@@ -42,7 +42,8 @@ This is the repository of Group 4 for CSE582 Final Project.
 
 ### Baseline Models
 - **Llama2**: with zero-shot and few-shots learning
+- LLaMA 2 is a collection of pretrained and fine-tuned large language models. We chose Llama2-13b-chat-hf for the balance of its superior performance on a set of linguistic tasks and its parameter scale
 - **SVM**: with adjusted Class Weights
 
 ### Superior Model
--- **RoBERTa**: with intent labels
+- **RoBERTa**: with intent labels
