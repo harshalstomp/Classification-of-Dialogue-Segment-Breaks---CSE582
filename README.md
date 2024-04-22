@@ -41,9 +41,9 @@ This is the repository of Group 4 for CSE582 Final Project.
 ## Models used in this project
 
 ### Baseline Models
-- **Llama2**: -- LLaMA 2 is a collection of pretrained and fine-tuned large language models. We chose Llama2-13b-chat-hf for the balance of its superior performance on a set of linguistic tasks and its parameter scale. 
+- **Llama2**: LLaMA 2 is a collection of pretrained and fine-tuned large language models. We chose Llama2-13b-chat-hf for the balance of its superior performance on a set of linguistic tasks and its parameter scale.  We included three columns of data: user, utterance, and intent. Our best result from this model comes from a 2-shot learning design, where 2 examples are provided as a part of context. 
 
-- **SVM**: with adjusted Class Weights
+- **SVM**: SVM classifies data by finding an optimal line or hyperplane that maximizes the distance between each class in an N-dimensional space. We adjust the class weights to handle the imbalance of the data. The best results from this model comes from a specific choice of inputs - utterance1, utterance2_text and category. 
 
 ### Superior Model
-- **RoBERTa**: with intent labels
+- **RoBERTa**: RoBERTa is a variant of BERT (Bidirectional Encoder Representations from Transformers) that improves its training process. It is pre-trained on a larger corpus with longer sequences and more training steps compared to BERT, resulting in better performance on downstream tasks. We trained the RoBERTa model on the tokenized utterance pairs using the AdamW optimizer (as this is the industry standard).
