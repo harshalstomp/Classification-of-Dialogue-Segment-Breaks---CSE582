@@ -36,4 +36,13 @@ This is the repository of Group 4 for CSE582 Final Project.
 | 1              | 4009      | 78.61%     |
 
 - **utterance1_intent**: The intent label for utterance 1.
-- **utterance2_intent**: The intent label for utterance 2. 
+- **utterance2_intent**: The intent label for utterance 2.
+
+## Models used in this project
+
+### Baseline Models
+- **Llama2**: with zero-shot and few-shots learning
+- **SVM**: with adjusted Class Weights
+
+### Superior Model
+-- **RoBERTa**: with intent labels
