@@ -1,6 +1,6 @@
 # Classification-of-Dialogue-Segment-Breaks---CSE582
 This is the repository of Group 4 for CSE582 Final Project.
-
+![](images/image.png)
 ## Overview Of The Task
 To understand the complex structure of how situated dialogues evolve, we utilize the first increment of a new dataset, called GUIDE: Growing Understanding through Interactive Daily Experience, and the RoBERTa pre-trained classification model to learn a function from sequential pairs of utterances to output labels that represent segment breaks in dialogue. Compared to baseline models (LLama2 and SVM), we find that our model outperforms various metrics on both labels. We also utilize several ablation studies to investigate the effect of tokenizers, intent labels, and augmented datasets.
 
@@ -59,6 +59,6 @@ To understand the complex structure of how situated dialogues evolve, we utilize
 ![](/images/results2.PNG)
 
 ### Additional Experiments
-* As an attempt to preprocess the dataset, we tried to use approaches like UnderSampling and SMOTE on the dataset, and then trained the model with the new dataset. However, the results were bad.
-* We fine-tuned the GEMMA 5 model on the tokenized utterance pairs using the Unsloth framework. GEMMA models are well-suited for various text generation tasks due to their architecture, which incorporates both text and multimodal inputs. They have demonstrated effectiveness in tasks like question answering, summarization, and reasoning. Unsloth provides a quantized version of the GEMMA model, making it feasible to fine-tune on limited compute resources such as a single T4 GPU.
-* 
+* As an attempt to preprocess the dataset, we tried to use approaches like UnderSampling and SMOTE on the dataset and then trained the model with the new dataset. However, the results were bad.
+* We fine-tuned the GEMMA 5 model on the tokenized utterance pairs using the Unsloth framework. GEMMA models are well-suited for various text generation tasks due to their architecture, which incorporates both text and multimodal inputs. They have demonstrated effectiveness in tasks like question answering, summarization, and reasoning. Unsloth provides a quantized version of the GEMMA model, making it feasible to fine-tune on limited compute resources such as a single T4 GPU.
+  
