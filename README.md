@@ -1,9 +1,13 @@
 # Classification-of-Dialogue-Segment-Breaks---CSE582
 This is the repository of Group 4 for CSE582 Final Project.
 
-(Valerie) update 4/10: added a label_1.csv file to dataset repo below. It contains all label 1 dialogues (N=1056), sourced from TRAINS93 and QuartoDial.
+## Overview Of The Task
+To understand the complex structure of how situated dialogues evolve, we utilize the first increment of a new dataset, called GUIDE: Growing Understanding through Interactive Daily Experience, and the RoBERTa pre-trained classification model to learn a function from sequential pairs of utterances to output labels that represent segment breaks in dialogue. Compared to baseline models (LLama2 and SVM), we find that our model outperforms various metrics on both labels. We also utilize several ablation studies to investigate the effect of tokenizers, intent labels, and augmented datasets.
 
-## Folder to upload Preprocessed Datasets - [Click Here](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/hmp5565_psu_edu/EuAqhN2dA5ZAg3xCPeRZwNsB4pZquDW6onc20c9BGTo-XQ?e=hYBv6N)
+## Data Preprocessing
+(Valerie) update 4/10: added a label_1.csv file to the dataset repo below. It contains all label 1 dialogues (N=1056), sourced from TRAINS93 and QuartoDial.
+
+### Folder to upload Preprocessed Datasets - [Click Here](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/hmp5565_psu_edu/EuAqhN2dA5ZAg3xCPeRZwNsB4pZquDW6onc20c9BGTo-XQ?e=hYBv6N)
 
 ### Variable Descriptions: 
 - **category_name**: The name of the activity.
