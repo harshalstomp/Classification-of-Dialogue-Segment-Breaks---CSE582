@@ -32,7 +32,7 @@ To understand the complex structure of how situated dialogues evolve, we utilize
 | 2               | 1472      | 28.86%     |
 | 3               | 1214      | 23.80%     |
 
-- **change_speaker**: Whether or not the two utterances happen between two different users/speakers. 1 indicates two different speakers, 0 indicates the same speaker.
+- **change_speaker**: Whether or not the two utterances happen between two different users/speakers. 1 indicates two different speakers, and 0 indicates the same speaker.
 
 | change_speaker | Frequency | Percentage |
 |----------------|-----------|------------|
@@ -45,9 +45,20 @@ To understand the complex structure of how situated dialogues evolve, we utilize
 ## Models used in this project
 
 ### Baseline Models
-- **Llama2**: LLaMA 2 is a collection of pretrained and fine-tuned large language models. We chose Llama2-13b-chat-hf for the balance of its superior performance on a set of linguistic tasks and its parameter scale.  We included three columns of data: user, utterance, and intent. Our best result from this model comes from a 2-shot learning design, where 2 examples are provided as a part of context. 
+- **Llama2**: LLaMA 2 is a collection of pre-trained and fine-tuned large language models. We chose Llama2-13b-chat-hf for the balance of its superior performance on a set of linguistic tasks and its parameter scale.  We included three columns of data: user, utterance, and intent. Our best result from this model comes from a 2-shot learning design, where 2 examples are provided as a part of context. 
 
-- **SVM**: SVM classifies data by finding an optimal line or hyperplane that maximizes the distance between each class in an N-dimensional space. We adjust the class weights to handle the imbalance of the data. The best results from this model comes from a specific choice of inputs - utterance1, utterance2_text and category. 
+- **SVM**: SVM classifies data by finding an optimal line or hyperplane that maximizes the distance between each class in an N-dimensional space. We adjust the class weights to handle the imbalance of the data. The best results from this model come from a specific choice of inputs - utterance1, utterance2_text, and category. 
 
 ### Superior Model
 - **RoBERTa**: RoBERTa is a variant of BERT (Bidirectional Encoder Representations from Transformers) that improves its training process. It is pre-trained on a larger corpus with longer sequences and more training steps compared to BERT, resulting in better performance on downstream tasks. We trained the RoBERTa model on the tokenized utterance pairs using the AdamW optimizer (as this is the industry standard).
+
+### Results
+
+!()
+
+!()
+
+### Additional Experiments
+* As an attempt to preprocess the dataset, we tried to use approaches like UnderSampling and SMOTE on the dataset, and then trained the model with the new dataset. However, the results were bad.
+* We fine-tuned the GEMMA 5 model on the tokenized utterance pairs using the Unsloth framework. GEMMA models are well-suited for various text generation tasks due to their architecture, which incorporates both text and multimodal inputs. They have demonstrated effectiveness in tasks like question answering, summarization, and reasoning. Unsloth provides a quantized version of the GEMMA model, making it feasible to fine-tune on limited compute resources such as a single T4 GPU.
+* 
